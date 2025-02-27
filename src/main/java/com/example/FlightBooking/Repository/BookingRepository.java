@@ -12,7 +12,7 @@ public interface BookingRepository extends JpaRepository<Booking, Integer> {
 
 
     @Query(value = "SELECT b.*, u.name as username FROM booking b JOIN users u ON b.user_id = u.user_id WHERE b.user_id = ?1", nativeQuery = true)
-    List<Map<String, Object>> viewMyTickets(int userId);
+    List<Map<String, String>> viewMyTickets(int userId);
 
     @Modifying
     @Transactional
