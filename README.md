@@ -14,12 +14,11 @@ The **Flight Booking System** is a Spring Boot-based web application that allows
   - Cancel a booking
 
 ## Technologies Used
-- **Backend:** Spring Boot, Spring MVC, Spring Data JPA
-- **Database:** MySQL / PostgreSQL
-- **Security:** Spring Security, JWT (JSON Web Token)
-- **Frontend:** (Optional) ReactJS / Angular (if applicable)
-- **Build Tool:** Maven / Gradle
-- **Other:** Hibernate, REST API
+- **Backend:** Spring Boot
+- **Database:** MySQL 
+- **Security:** Spring Security
+- **Build Tool:** Maven 
+- **Other:**  REST API
 
 
 
