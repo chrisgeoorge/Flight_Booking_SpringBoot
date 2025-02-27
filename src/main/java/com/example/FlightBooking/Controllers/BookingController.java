@@ -41,7 +41,7 @@ public class BookingController {
     @PostMapping("/update-ticket")
     public ResponseEntity<Map<String, String>> updateBooking(@RequestBody Booking booking){
         try{
-            bookingRepository.updateBooking(booking.bookingId, booking.ticketClass, booking.dateOfJourney);
+            bookingRepository.updateBooking(booking.getBookingId(), booking.getTicketClass(), booking.getDateOfJourney());
             Map<String, String> response = new HashMap<>();
             response.put("Status", "Ticket Updated Successfully");
             return ResponseEntity.ok(response);
@@ -54,7 +54,7 @@ public class BookingController {
     @DeleteMapping("/cancel-ticket")
     public ResponseEntity<Map<String, String>> cancelBooking(@RequestBody Booking booking){
         try{
-            bookingRepository.cancelBooking(booking.userId);
+            bookingRepository.cancelBooking(booking.getUserId());
             return ResponseEntity.ok(Map.of("Status", "Ticket Cancelled Successfully"));
         }
         catch (Exception e){
