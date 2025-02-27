@@ -27,9 +27,11 @@ The **Flight Booking System** is a Spring Boot-based web application that allows
 This project is open-source under the [MIT License](LICENSE).
 
 ## Contributors
-- Sujal (@sujalsha)
-- Chris George (@chrisgeoorge)
-- Sreya
-- Jahanvi
-- Jesny
+- Sujal (project integration and creating project architecture and data model)
+- Chris George (Booking controller)
+- Sreya vijay (User model)
+- Jahhhanvi (User repository)
+- Jesny (Booking model and repository)
+- Rahul (user Controller)
+
 
