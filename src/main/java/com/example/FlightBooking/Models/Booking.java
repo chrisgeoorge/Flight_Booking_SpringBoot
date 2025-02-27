@@ -28,9 +28,8 @@ public class Booking {
         @JsonProperty("flightNo")
         private String flightNo;
 
-        @Temporal(TemporalType.DATE)
-        @JsonProperty
-        private Date dateOfJourney;
+        @JsonProperty("dateOfJourney")
+        private String dateOfJourney;
 
         @Temporal(TemporalType.TIMESTAMP)
         @Column(updatable = false, nullable = false)
@@ -39,7 +38,7 @@ public class Booking {
         public Booking() {
         }
 
-        public Booking(int bookingId, int userId, String source, String destination, String ticketClass, String airlineName, String flightNo, Date dateOfJourney, Date dateOfBooking) {
+        public Booking(int bookingId, int userId, String source, String destination, String ticketClass, String airlineName, String flightNo, String dateOfJourney, Date dateOfBooking) {
             this.bookingId = bookingId;
             this.userId = userId;
             this.source = source;
@@ -107,11 +106,11 @@ public class Booking {
             this.flightNo = flightNo;
         }
 
-        public Date getDateOfJourney() {
+        public String getDateOfJourney() {
             return dateOfJourney;
         }
 
-        public void setDateOfJourney(Date dateOfJourney) {
+        public void setDateOfJourney(String dateOfJourney) {
             this.dateOfJourney = dateOfJourney;
         }
 
