@@ -23,7 +23,7 @@ public class BookingController {
     public ResponseEntity<Map<String, String>> bookTicket(@RequestBody Booking booking){
         Booking bookingObj = bookingRepository.save(booking);
         Map<String, String> response = new HashMap<>();
-        if (bookingObj.getId() != 0){
+        if (bookingObj.getBookingId() != 0){
             response.put("Status", "Ticket Booked Successfully");
         }
         else {
